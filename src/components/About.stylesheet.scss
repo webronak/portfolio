@@ -1,0 +1,129 @@
+.aboutPage {
+  // width: 50%;
+  //   background-color: white;
+  .myIntro {
+    transition-duration: 0.5s;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 5%;
+    border-radius: 20px;
+    width: 70%;
+    background-color: white;
+    // display: none;
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      h2 {
+        font-weight: bolder;
+        font-size: 35px;
+        color: rgb(255, 107, 144);
+        margin: 5% 0px;
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+      }
+      button {
+        z-index: 2;
+        margin: 10% auto;
+        padding: 5px 20px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        background-color: rgb(0, 183, 255);
+        box-shadow: 0px 1px 5px rgb(202, 202, 202);
+        transition-duration: 0.3s;
+        &:hover {
+          background-color: rgb(0, 183, 255);
+          box-shadow: 1px 1px 5px rgb(167, 167, 167);
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .myIntroToggle {
+    opacity: 0;
+  }
+  .myResume {
+    embed {
+      height: 85vh;
+      border-radius: 20px;
+      margin: 0px auto;
+      width: 70%;
+      position: absolute;
+      top: 10px;
+      right: -100%;
+      transition-duration: 0.8s;
+      opacity: 0;
+    }
+    .embedToggle {
+      right: 30px;
+      opacity: 1;
+    }
+    button {
+      display: none;
+      position: absolute;
+      // display: flex;
+      // align-items: center;
+      bottom: 10px;
+      padding: 5px 20px;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      background-color: rgb(0, 183, 255);
+      box-shadow: 0px 1px 5px rgb(202, 202, 202);
+      transition-duration: 0.3s;
+      svg {
+        margin: 0px 5px;
+      }
+      &:hover {
+        background-color: rgb(0, 183, 255);
+        box-shadow: 1px 1px 5px rgb(167, 167, 167);
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .buttonToggle {
+      display: block;
+    }
+  }
+
+  img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 40%;
+    transition-duration: 0.5s;
+  }
+  .imgToggle {
+    // left: 0px;
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .aboutPage {
+    .myIntro {
+      width: 100%;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+    .myResume {
+      .embedToggle {
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        opacity: 1;
+      }
+    }
+    img {
+      width: 60%;
+      margin: auto;
+    }
+  }
+}

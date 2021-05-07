@@ -1,0 +1,199 @@
+.links {
+  height: 90%;
+  width: 23%;
+  background-image: linear-gradient(
+    65deg,
+    rgba(35, 211, 255, 0.5),
+    rgba(121, 255, 237, 0.4)
+  );
+  box-shadow: 0px 0px 20px rgb(212, 212, 212);
+  border: 0.2px solid rgb(233, 233, 233);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+
+  .myImg {
+    width: 120px;
+    height: 120px;
+    margin: 5px auto;
+    background-image: url("./images/myImg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgb(89, 236, 255);
+  }
+  h2 {
+    color: rgb(0, 140, 255);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  small {
+    text-align: center;
+    color: rgb(240, 0, 140);
+  }
+  .routes {
+    width: 90%;
+    .bio-in-routes {
+      display: none;
+    }
+    .nav {
+      a {
+        text-decoration: none;
+        font-size: 16px;
+      }
+      li {
+        margin: 15px auto;
+        // font-size: larger;
+        list-style: none;
+        color: rgb(0, 126, 175);
+        display: flex;
+        align-items: center;
+        transition-duration: 1s;
+        &:hover {
+          .arrow {
+            display: flex;
+          }
+        }
+        .arrow {
+          display: flex;
+          width: 50px;
+          display: none;
+          span {
+            display: block;
+            width: 15px;
+            height: 15px;
+            border-top: 2px solid rgb(255, 49, 49);
+            transform: rotate(45deg);
+            border-right: 2px solid rgb(255, 0, 170);
+            margin: -3px;
+            animation: scroll 1s infinite;
+            &:nth-child(2) {
+              animation-delay: 0.1s;
+            }
+            &:nth-child(3) {
+              animation-delay: 0.2s;
+            }
+            @keyframes scroll {
+              0% {
+                opacity: 0;
+                // transform: rotate(10deg) translate(-20px, -20px);
+              }
+              50% {
+                opacity: 1;
+              }
+              100% {
+                opacity: 0;
+                // transform: rotate(10deg) translate(20px, 20px);
+              }
+            }
+          }
+        }
+      }
+      svg {
+        margin: 0px 10px;
+        color: rgb(255, 112, 136);
+      }
+    }
+    .bioBottom {
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      padding: 10px;
+      p {
+        text-align: center;
+        font-size: smaller;
+      }
+      .socialLinks {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 9vh;
+    justify-content: space-evenly;
+    &:focus {
+      outline: none;
+    }
+    .bio {
+      margin-left: 20px;
+    }
+    .burger {
+      cursor: pointer;
+      padding: 20px;
+      .line {
+        background-color: rgb(255, 255, 255);
+        height: 4px;
+        border-radius: 5px;
+        width: 35px;
+        margin: 4px auto;
+        // position: absolute;
+        transition-duration: 0.5s;
+      }
+    }
+    .toggle {
+      #line1 {
+        transform: rotate(-45deg) translate(-13px, 9px);
+      }
+      #line2 {
+        opacity: 0;
+      }
+      #line3 {
+        transform: rotate(45deg) translate(-3px, 0px);
+      }
+    }
+    .bio {
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 50%;
+      .myImg {
+        width: 35px;
+        position: absolute;
+        left: 15%;
+        height: 35px;
+      }
+      h2 {
+        font-size: medium;
+      }
+      small {
+        display: none;
+      }
+    }
+    .routes {
+      // display: none;
+      width: 70%;
+      height: 100vh;
+      position: absolute;
+      top: 0px;
+      left: -100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: white;
+      z-index: 999;
+      transition-duration: 0.5s;
+      .bio-in-routes {
+        display: block;
+      }
+    }
+    .toggle-routes {
+      left: 0px;
+    }
+  }
+}
