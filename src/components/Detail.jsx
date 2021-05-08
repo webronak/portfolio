@@ -14,7 +14,7 @@ const Detail = () => {
         <div className="detail">
             
             <Switch>
-                <Route path="/my-portfolio/" exact>
+                <Route path="/" exact>
                     <About/>
                 </Route>
                 <Route path="/skills" exact>
