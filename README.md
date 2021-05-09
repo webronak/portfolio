@@ -27,8 +27,8 @@ Here's a blank template to get started:
 
 ### Built With
 
-* [](React)
-* [](Sass)
+* [React]()
+* [Sass]()
 
 
 
