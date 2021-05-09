@@ -17,17 +17,10 @@
   </p>
 </p>
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`webronak`, `my-portfolio`, `webronak2030@gmail.com`, `My Portfolio`
-
 
 ### Built With
 
-* React
+* React js
 * Sass
 * React-router-dom
 
@@ -37,4 +30,7 @@ Here's a blank template to get started:
 
 Your Name -  Ronak singh
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: https://github.com/wenronak/my-portfolio
+
+Email: webronak2030@gmail.com
+
