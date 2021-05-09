@@ -13,7 +13,7 @@
     <a href="https://github.com/webronak/my-portfolio"><strong>Explore docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/webronak/my-portfolio">View Demo</a>
+    <a href="https://webronak.github.io/my-portfolio/">View Demo</a>
   </p>
 </p>
 
@@ -28,9 +28,11 @@
 <!-- CONTACT -->
 ## Contact
 
-Your Name -  Ronak singh
+#Ronak singh
 
-Project Link: https://github.com/wenronak/my-portfolio
+Project Link: https://github.com/webronak/my-portfolio
+
+Linkedin: https://www.linkedin.com/in/ronak-singh-8a11101a6/
 
 Email: webronak2030@gmail.com
 
