@@ -18,7 +18,7 @@
 </p>
 
 
-### Built With
+## Built With
 
 * React js
 * Sass
@@ -28,7 +28,7 @@
 <!-- CONTACT -->
 ## Contact
 
-#Ronak singh
+Name - Ronak singh
 
 Project Link: https://github.com/webronak/my-portfolio
 
