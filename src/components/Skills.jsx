@@ -35,7 +35,7 @@ class Skills extends React.Component {
                 name="react js"
            />
            <SkillComponent
-                percentage="55"
+                percentage="90"
                 img={reduxImg}
                 name="redux"
            />
@@ -45,7 +45,7 @@ class Skills extends React.Component {
                 name="SASS - CSS pre processer"
            />
            <SkillComponent
-                percentage="80 "
+                percentage="60"
                 img={gitImg}
                 name="git"
            />

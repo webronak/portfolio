@@ -14,7 +14,9 @@ class SkillComponent extends React.Component{
             }
         },10);
     }
+
     render(props){
+        const labelStr = this.state.percentage < 30?"beginner":this.state.percentage < 70?"intermediate":"advance";
         return(
         <div className="skill">
             <img src={this.props.img} alt="react" />
@@ -28,8 +30,9 @@ class SkillComponent extends React.Component{
                 </div>
             </div>
     
-            <div className="percentage">
-                <h1>{this.state.percentage}%</h1>
+            <div className={`percentage-${labelStr}`}>
+            {labelStr}
+                
             </div>
         </div>
         );

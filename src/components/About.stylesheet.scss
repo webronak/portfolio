@@ -1,12 +1,15 @@
 .aboutPage {
-  // width: 50%;
-  //   background-color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
   .myIntro {
     transition-duration: 0.5s;
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
     padding: 5%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 20px;
     width: 70%;
     background-color: white;
@@ -22,8 +25,17 @@
         margin: 5% 0px;
         text-align: center;
       }
-      p {
-        text-align: justify;
+      ul {
+        li {
+          position: relative;
+          padding-left: 2rem;
+          margin-bottom: 0.5rem;
+          list-style: none;
+          .emoji {
+            position: absolute;
+            left: 0;
+          }
+        }
       }
       button {
         z-index: 2;

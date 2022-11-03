@@ -5,7 +5,7 @@
     .skill {
       width: 90%;
       border: 0.1px solid white;
-      margin: 10px auto;
+      // margin: 10px 0px;
       background-color: white;
       padding: 10px;
       margin-top: 15px;
@@ -48,8 +48,29 @@
           }
         }
       }
-      .percentage {
-        color: rgb(0, 153, 255);
+      .percentage-advance {
+        background-color: rgb(0, 183, 30);
+        color: white;
+        border-radius: 0.2rem;
+        padding: 0.2rem 0.6rem;
+        font-weight: 900;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      .percentage-intermediate {
+        background-color: rgb(202, 152, 1);
+        color: white;
+        border-radius: 0.2rem;
+        padding: 0.2rem 0.6rem;
+        font-weight: 900;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      .percentage-beginner {
+        background-color: rgb(204, 106, 2);
+        color: white;
+        border-radius: 0.2rem;
+        padding: 0.2rem 0.6rem;
+        font-weight: 900;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       }
     }
   }

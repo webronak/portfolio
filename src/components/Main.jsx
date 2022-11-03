@@ -13,8 +13,7 @@ const Main = () => {
     <div className="main">
       <div className="glass">
         <Bio/>
-        <Detail/>
-        
+        <Detail/>       
       </div>
       <img src={reactImg} alt="react" id="reactImg1" />
       <img src={reactImg} alt="react" id="reactImg2" />
