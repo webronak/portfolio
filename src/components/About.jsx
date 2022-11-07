@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.stylesheet.scss";
 import meImg from "./images/me.png";
-import pdf from "../resume.pdf";
+import pdf from "../Resume.pdf";
 
 class About extends React.Component {
   constructor() {
@@ -22,8 +22,8 @@ class About extends React.Component {
               <li>
                 {" "}
                 <span className="emoji">👨‍💼</span> Frontend Developer with 2+
-                years of professional experiences in Web Designing and User
-                Interface Development.
+                years of professional experiences in Web Designing and Front-end
+                Development.
               </li>
               <li>
                 {" "}
@@ -41,7 +41,7 @@ class About extends React.Component {
               <li>
                 {" "}
                 <span className="emoji">🚅</span> Experts in responsive Web
-                Design and analysing and fixing UI bugs quickly.
+                Design, analysing and fixing UI bugs quickly.
               </li>
               <li>
                 {" "}
