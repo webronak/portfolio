@@ -29,7 +29,7 @@ class Bio extends React.Component {
         <Link to="/" className="bio Tilt">
           <div>
             <div className="myImg Tilt-inner"></div>
-            <h3>Ronak Singh</h3>
+            <h4>Ronak Singh</h4>
             <small>Front-End | React js developer</small>
           </div>
         </Link>

@@ -17,7 +17,9 @@ class About extends React.Component {
           className={this.state.pdfToggle ? "myIntro myIntroToggle" : "myIntro"}
         >
           <div className="intro">
-            <h2 className="head">Hi, I'm Ronak 👋</h2>
+            <h2 className="head">
+              Hi, I'm Ronak <div className="wave_hand">👋</div>
+            </h2>
             <ul>
               <li>
                 {" "}

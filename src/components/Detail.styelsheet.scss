@@ -5,11 +5,15 @@
   border-radius: 20px;
   .heading {
     // background-color: white;
-    padding: 10px 0px 10px 25px;
-    color: rgb(21, 189, 255);
-    border-bottom: 12px solid rgba(0, 225, 255, 0.5);
-    border-bottom-right-radius: 20%;
-    width: 90%;
+    padding: 10px 10px 10px 10px;
+    background-color: #15bdff;
+    color: white;
+    margin-left: 1.6rem;
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    // background: white;
     svg {
       color: rgb(255, 24, 63);
       width: 30px;
