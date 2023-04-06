@@ -1,20 +1,21 @@
 .links {
   height: 100%;
   width: 23%;
+  min-width: 16rem;
   position: relative;
   background-image: linear-gradient(
     65deg,
-    rgba(35, 211, 255, 0.5),
-    rgba(121, 255, 237, 0.4)
+    rgba(255, 255, 255, 0.7),
+    rgba(212, 255, 249, 0.8)
   );
   // box-shadow: 0px 0px 20px rgb(212, 212, 212);
   border: 0.2px solid rgb(233, 233, 233);
   border-radius: 20px 0px 0px 20px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   align-items: center;
   justify-content: space-evenly;
-  cursor: pointer;
 
   .myImg {
     width: 120px;
@@ -72,7 +73,6 @@
         border-radius: 50px;
         transition: 0.3s;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
         overflow: visible;
         justify-content: center;
         text-align: center;
@@ -93,7 +93,8 @@
           width: 100%;
           text-align: center;
           width: fit-content;
-          color: #31b1ef;
+          color: transparent;
+          text-shadow: none;
           font-weight: 700;
         }
         &:hover,
@@ -125,7 +126,7 @@
     padding: 15px 0;
     border-radius: 0 0 30px 30px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background: white;
+    background: #ffffff;
     text-align: center;
     top: 0;
     text-decoration: none;
@@ -147,54 +148,10 @@
       animation: topToBottom 0.3s linear 1s 1 normal backwards;
     }
   }
+}
 
-  .bioBottom {
-    background-color: rgb(255, 255, 255);
-    border-radius: 30px 30px 0 0;
-    padding: 1rem 0;
-    position: absolute;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    bottom: 0;
-    width: 90%;
-    overflow: visible;
-    animation: bottomToTop 0.5s linear 0.4s 1 normal backwards;
-    ::after {
-      content: " ";
-      width: 102%;
-      left: 50%;
-      z-index: -1;
-      transform: translateX(-50%);
-      bottom: 0;
-      position: absolute;
-      border-radius: 30px 30px 0 0;
-      height: 108%;
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      display: block;
-      background-color: #31b1ef;
-      animation: bottomToTop 0.3s linear 1s 1 normal backwards;
-    }
-    p {
-      text-align: center;
-      font-weight: 700;
-      display: block;
-      font-size: 0.8rem;
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      color: white;
-      border-radius: 50px;
-      padding: 3px 15px;
-      background-color: #f0008c;
-      width: fit-content;
-      margin: 5px auto;
-    }
-    .socialLinks {
-      display: flex;
-      justify-content: space-evenly;
-      margin-top: 20px;
-      a {
-        text-decoration: none;
-      }
-    }
-  }
+.links_for_mobile {
+  display: none;
 }
 
 .burger {
@@ -282,6 +239,94 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .links {
+    display: none;
+  }
+  .links_for_mobile {
+    position: relative;
+    width: 100%;
+    display: block;
+    z-index: 9999;
+    .myImg {
+      width: 4rem;
+      height: 4rem;
+      top: -20px;
+      left: -15px;
+      position: absolute;
+      background-image: url("./images/myImg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    .nav {
+      overflow: visible;
+      position: absolute;
+      right: -33px;
+      top: -4.5rem;
+      a {
+        text-decoration: none;
+        font-size: 16px;
+      }
+      li {
+        position: relative;
+        width: 60px;
+        margin: 3.2rem auto;
+        display: flex;
+        background-color: #31b1ef;
+        align-items: center;
+        border-radius: 50px;
+        transition: 0.3s;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        overflow: visible;
+        justify-content: center;
+        text-align: center;
+        svg {
+          color: white;
+          border-radius: 50px;
+          width: 12px;
+          height: 12px;
+          padding: 13px;
+          left: 0;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          background-color: rgb(240, 0, 140);
+          position: absolute;
+          top: 0px;
+          transition: 0.3s;
+        }
+        .text {
+          padding: 15px;
+          width: 100%;
+          text-align: center;
+          width: fit-content;
+          color: transparent;
+          text-shadow: none;
+          font-weight: 700;
+          display: none;
+        }
+        &:hover,
+        &.active {
+          // width: 160px;
+          // svg {
+          //   position: absolute;
+          //   top: -17px;
+          //   left: -15px;
+          //   width: 15px;
+          //   font-size: 1rem;
+          //   transform: rotate(180);
+          // }
+        }
+      }
+      svg {
+        margin: 0px auto;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
 // ANIMATIONS
 @keyframes topToBottom {
   0% {
@@ -291,18 +336,6 @@
 
   100% {
     top: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes bottomToTop {
-  0% {
-    bottom: -20rem;
-    opacity: 0;
-  }
-
-  100% {
-    bottom: 0;
     opacity: 1;
   }
 }

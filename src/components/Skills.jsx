@@ -7,13 +7,16 @@ import psImg from "./images/ps.png";
 import gitImg from "./images/git.png";
 import sassImg from "./images/sass.png";
 import SkillComponent from "./Skill.component";
+import TypescriptImg from "./images/typescript.png";
+import jestImg from "./images/jest.png";
 
 class Skills extends React.Component {
+
   render() {
     return (
       <div className="skills">
         <h1 className="heading">
-          My skills
+          Skills
           {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -28,20 +31,22 @@ class Skills extends React.Component {
         </h1>
 
         <div className="set">
+          <SkillComponent percentage="99" img={jsImg} name="javascript" />
+          <SkillComponent
+            percentage="95"
+            img={TypescriptImg}
+            name="Typescript"
+          />
           <SkillComponent percentage="95" img={reactImg} name="react js" />
+          <SkillComponent percentage="92" img={jestImg} name="Jest" />
           <SkillComponent percentage="90" img={reduxImg} name="redux" />
           <SkillComponent
             percentage="99"
             img={sassImg}
             name="SASS - CSS pre processer"
           />
-          <SkillComponent percentage="60" img={gitImg} name="git" />
-          <SkillComponent
-            percentage="99"
-            img={jsImg}
-            name="vanilla javascript"
-          />
-          <SkillComponent percentage="70" img={psImg} name="adobe photoshop" />
+          <SkillComponent percentage="70" img={gitImg} name="git" />
+          <SkillComponent percentage="65" img={psImg} name="adobe photoshop" />
         </div>
       </div>
     );

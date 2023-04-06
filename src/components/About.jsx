@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.stylesheet.scss";
-import meImg from "./images/me.png";
+import meImg from "./images/me.webp";
 import pdf from "../Resume.pdf";
 
 class About extends React.Component {

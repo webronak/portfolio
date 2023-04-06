@@ -1,18 +1,24 @@
 .detail {
   height: 96%;
   width: 80%;
+  // position: relative;
   //   background-color: white;
   border-radius: 20px;
   .heading {
-    // background-color: white;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 20px;
     background-color: #15bdff;
     color: white;
+    top: 0;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    z-index: 9;
     margin-left: 1.6rem;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
+    width: -moz-fit-content;
     width: fit-content;
     margin-bottom: 10px;
     font-size: 1.3rem;
+    animation: topToBottom 0.5s linear 0s 1 normal backwards;
     // background: white;
     svg {
       color: rgb(255, 24, 63);
@@ -25,9 +31,10 @@
     overflow: hidden;
     overflow-y: scroll;
     height: 80vh;
+    margin-top: 3rem;
     padding-bottom: 20px;
     &::-webkit-scrollbar {
-      width: 9px;
+      width: 6px;
     }
     &::-webkit-scrollbar-thumb {
       background: linear-gradient(
@@ -54,7 +61,12 @@
   .detail {
     width: 95%;
     .heading {
-      width: 90%;
+      width: fit-content;
+      position: absolute;
+      left: 1rem;
+      margin: 0;
+      top: 0;
+      border-radius: 0 0 10px 10px;
       font-size: 20px;
       svg {
         width: 20px;
@@ -62,5 +74,33 @@
         color: rgb(255, 24, 63);
       }
     }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .detail {
+    .heading {
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1rem;
+      min-width: 9rem;
+      text-align: center;
+    }
+    .set {
+      margin-top: 0;
+    }
+  }
+}
+
+// ANIMATIONS
+@keyframes topToBottom {
+  0% {
+    top: -10rem;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
   }
 }

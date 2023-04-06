@@ -12,7 +12,7 @@ class SkillComponent extends React.Component {
       if (this.state.percentage < this.props.percentage) {
         this.setState({ percentage: this.state.percentage + 1 });
       }
-    }, 10);
+    }, 11);
   }
 
   render(props) {
@@ -21,7 +21,7 @@ class SkillComponent extends React.Component {
         ? "beginner"
         : this.state.percentage < 70
         ? "intermediate"
-        : "advance";
+        : "Perfect";
     return (
       <div className="skill">
         <img src={this.props.img} alt="react" />
@@ -37,8 +37,9 @@ class SkillComponent extends React.Component {
             </div>
           </div>
         </div>
-
-        <div className={`skill-badge percentage-${labelStr}`}>{labelStr}</div>
+        {this.state.percentage == this.props.percentage && (
+          <div className={`skill-badge percentage-${labelStr}`}>{labelStr}</div>
+        )}
       </div>
     );
   }
