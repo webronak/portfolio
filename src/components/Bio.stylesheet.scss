@@ -18,15 +18,25 @@
   justify-content: space-evenly;
 
   .myImg {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     margin: 5px auto;
-    background-image: url("./images/myImg.jpg");
+    // background-image: url("./images/myImg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
+    background-color: #31b1ef;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: inset 0 0 5px;
+    img {
+      // position: absolute;
+      border-radius: 0 0 4.1rem 4.1rem;
+      width: 100%;
+    }
   }
   h4 {
     background-color: #31b1ef;
@@ -80,7 +90,7 @@
           color: white;
           border-radius: 50px;
           width: 20px;
-          padding: 15px;
+          padding: 12px;
           left: 0;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           background-color: rgb(240, 0, 140);
@@ -89,7 +99,7 @@
           transition: 0.3s;
         }
         .text {
-          padding: 15px;
+          padding: 14px;
           width: 100%;
           text-align: center;
           width: fit-content;
@@ -239,7 +249,7 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 900px) {
   .links {
     display: none;
   }
@@ -254,12 +264,21 @@
       top: -20px;
       left: -15px;
       position: absolute;
-      background-image: url("./images/myImg.jpg");
+      // background-image: url("./images/myImg.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       border-radius: 50%;
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      background-color: white;
+      // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      display: flex;
+      align-items: flex-end;
+      box-shadow: inset 0 0 1px;
+      img {
+        // position: absolute;
+        border-radius: 0 0 4.1rem 4.1rem;
+        width: 100%;
+      }
     }
     .nav {
       overflow: visible;

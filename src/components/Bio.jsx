@@ -9,6 +9,7 @@ import {
   faUserGraduate,
   faBriefcase
 } from "@fortawesome/free-solid-svg-icons";
+import myAvatar from "./images/ronak_avatar.png"
 import { withRouter } from "react-router-dom";
 class Bio extends React.Component {
   constructor() {
@@ -30,7 +31,9 @@ class Bio extends React.Component {
           {/* <Tilt className="bio Tilt" options={{ max: 70 }}> */}
           <Link to="/" className="bio Tilt">
             <div>
-              <div className="myImg Tilt-inner"></div>
+              <div className="myImg Tilt-inner">
+                <img src={myAvatar} />
+              </div>
               <h4>Ronak Singh</h4>
               <small>Front-End | React js developer</small>
             </div>
@@ -43,7 +46,9 @@ class Bio extends React.Component {
             }
           >
             <Tilt className="bio-in-routes Tilt" options={{ max: 70 }}>
-              <div className="myImg Tilt-inner"></div>
+              <div className="myImg Tilt-inner">
+                <img src={myAvatar} />
+              </div>
               <h2>Ronak</h2>
               <small>
                 React js developer
@@ -108,11 +113,13 @@ class Bio extends React.Component {
         {/* Mobile view */}
         <div className="links_for_mobile">
           <Link to="/" className="bio Tilt">
-            <div className="myImg Tilt-inner"></div>
+            <div className="myImg">
+              <img src={myAvatar} />
+            </div>
           </Link>
           <div className="drawerBtn">
-                  
-          </div>  
+
+          </div>
           <div className="otherPagesLinks">
             <ul className="nav" onClick={() => this.setState({ toggle: false })}>
               <Link to="/experience">

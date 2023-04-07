@@ -15,9 +15,9 @@ const Education = () => {
         <Course
           courseImg={universityImg}
           courseName="B.Voc - Web development"
-          courseType="Graduation"
-          courseStatus="Persuing... (In 2nd Year)"
-          completed={false}
+          courseType="Graduation (2019 - 2022)"
+          courseStatus="bachelor's in software engineering"
+          completed={true}
         />
         <Course
           courseImg={googlrCertificateImg}
