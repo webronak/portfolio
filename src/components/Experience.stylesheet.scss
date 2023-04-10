@@ -99,6 +99,10 @@ h2 {
       color: $color1;
       letter-spacing: 1.5px;
     }
+    &__subtitle{
+      text-transform: capitalize;
+      font-size: 1.1rem;
+    }
     &__content {
       padding: $spacing;
       box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),

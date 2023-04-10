@@ -6,7 +6,7 @@ import {
     faBriefcase
 } from "@fortawesome/free-solid-svg-icons";
 
-const ExperienceCard = ({ i, title, date, time, technicalSkills, responsibilities }) => {
+const ExperienceCard = ({ i, title, date, time, technicalSkills, responsibilities, company }) => {
     return (
         <div className={`timeline__event  animated fadeInUp delay-3s timeline__event--type${i}`}>
             <div className="timeline__event__icon ">
@@ -20,6 +20,9 @@ const ExperienceCard = ({ i, title, date, time, technicalSkills, responsibilitie
             <div className="timeline__event__content ">
                 <div className="timeline__event__title">
                     {title}
+                </div>
+                <div className="timeline__event__subtitle">
+                    @{company}
                 </div>
                 <div className="timeline__event__description">
                     <div className="timeline__event__description_subhead" >Technical kills</div>
@@ -44,7 +47,7 @@ const Experience = () => {
                 <div className="timeline">
                     {
                         data.reverse().map((exp, i) => (
-                            <ExperienceCard i={`${i + 1}`} title={exp.jobTitle} date={exp.timeSpan} time={exp.time} technicalSkills={exp.technicalSkills.join(" &#183; ")} responsibilities={exp.Responsibilities.join(" &#183; ")} />
+                            <ExperienceCard i={`${i + 1}`} title={exp.jobTitle} date={exp.timeSpan} time={exp.time} company={exp.company} technicalSkills={exp.technicalSkills.join(" &#183; ")} responsibilities={exp.Responsibilities.join(" &#183; ")} />
                         ))
                     }
                    
