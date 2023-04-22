@@ -11,7 +11,7 @@ const Projects = () => {
       <h1 className="heading">Projects</h1>
 
       <div className="set">
-      <Project
+        <Project
           projectImg={TypescriptPracticeAppImg}
           projectDesc="I built this webpage for a doctor, SEO-friendly webpage with beautiful UI. Moreover, fluent in getting user queries and direct them on Gmail."
           projectLink="https://webronak.github.io/typescript-taskify-app/"

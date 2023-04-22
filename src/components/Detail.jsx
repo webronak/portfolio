@@ -20,7 +20,7 @@ const Detail = () => {
         <Route path="/projects" exact>
           <Projects />
         </Route>
-        <Route path="/education" exact>
+        <Route path="/certifications" exact>
           <Education />
         </Route>
         <Route path="/experience" exact>

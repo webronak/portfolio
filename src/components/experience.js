@@ -1,3 +1,27 @@
+function getDateDifference(startDate, endDate) {
+  const start = new Date(startDate);
+  const end = new Date(endDate);
+
+  const yearDiff = end.getFullYear() - start.getFullYear();
+  const monthDiff = end.getMonth() - start.getMonth();
+
+  if (yearDiff === 0 && monthDiff === 0) {
+    return "less than a month";
+  } else {
+    const yearString = yearDiff > 1 ? `${yearDiff} years` : `${yearDiff} year`;
+    const monthString =
+      monthDiff > 1 ? `${monthDiff} months` : `${monthDiff} month`;
+
+    if (yearDiff === 0) {
+      return monthString;
+    } else if (monthDiff === 0) {
+      return yearString;
+    } else {
+      return `${yearString} ${monthString}`;
+    }
+  }
+}
+
 const data = [
   {
     jobTitle: "Javascript Developer - Internship",
@@ -38,7 +62,7 @@ const data = [
     jobTitle: "SDE-1 ( Frontend )",
     company: "Scalereal Technologies",
     timeSpan: "May 2022 - Current...",
-    time: "10 Months",
+    time: getDateDifference(new Date("May 2022"), new Date()),
     technicalSkills: [
       "Javascript",
       "React.js",

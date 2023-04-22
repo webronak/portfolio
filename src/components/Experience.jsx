@@ -50,7 +50,7 @@ const Experience = () => {
                             <ExperienceCard i={`${i + 1}`} title={exp.jobTitle} date={exp.timeSpan} time={exp.time} company={exp.company} technicalSkills={exp.technicalSkills.join(" &#183; ")} responsibilities={exp.Responsibilities.join(" &#183; ")} />
                         ))
                     }
-                   
+
 
                 </div>
             </div>

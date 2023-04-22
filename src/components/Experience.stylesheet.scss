@@ -31,6 +31,9 @@ h2 {
   font-size: 2rem;
   font-weight: 100;
 }
+.timeline-container {
+  height: 100%;
+}
 .timeline {
   display: flex;
   flex-direction: column;
@@ -72,7 +75,7 @@ h2 {
           right: auto;
           z-index: -1;
           transform: translateX(-50%);
-          animation: fillTop 2s forwards 4s ease-in-out;
+          animation: fillTop 1s forwards 0s ease-in-out;
         }
         &:after {
           content: "";
@@ -99,7 +102,7 @@ h2 {
       color: $color1;
       letter-spacing: 1.5px;
     }
-    &__subtitle{
+    &__subtitle {
       text-transform: capitalize;
       font-size: 1.1rem;
     }
@@ -156,7 +159,7 @@ h2 {
         z-index: -1;
         left: 50%;
         transform: translateX(-50%);
-        animation: fillTop 2s forwards 4s ease-in-out;
+        animation: fillTop 1s forwards 0s ease-in-out;
       }
       &:after {
         content: "";
@@ -168,7 +171,7 @@ h2 {
         z-index: -1;
         top: 50%;
         transform: translateY(-50%);
-        animation: fillLeftOdd 2s forwards 4s ease-in-out;
+        animation: fillLeftOdd 1s forwards 0s ease-in-out;
       }
     }
     &__description {

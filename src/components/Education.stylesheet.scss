@@ -1,6 +1,74 @@
 .education {
-  
+  height: 100%;
   .set {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    // overflow: hidden;
+    #item2,
+    #item1,
+    #item3 {
+      position: absolute;
+      z-index: 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 15rem;
+      padding: 4rem;
+      width: 20rem;
+      // background-color: white;
+      img {
+        width: 100%;
+        height: auto;
+        user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+      }
+    }
+    #item1 {
+      top: 3rem;
+      left: 3rem;
+    }
+    #item2 {
+      top: 30%;
+      left: 10%;
+    }
+    #item3 {
+      top: 50%;
+      left: 20%;
+    }
+    #my_avtar_img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 99;
+      // transform: translateX(-50%);
+      width: fit-content;
+      height: fit-content;
+      width: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 20rem;
+      img {
+        width: auto;
+        height: 100%;
+        user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+      }
+    }
     .course {
       border-radius: 10px;
       margin: 20px auto;
@@ -31,6 +99,24 @@
           width: 50%;
           border: none;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .education {
+    .set {
+      padding-top: 2rem;
+      #item2,
+      #item1,
+      #item3 {
+        width: 50%;
+        // left: 0;
+        // position: initial;
+      }
+      #my_avtar_img {
+        height: 15rem;
       }
     }
   }

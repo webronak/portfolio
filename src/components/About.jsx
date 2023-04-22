@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.stylesheet.scss";
-import meImg from "./images/me.webp";
+import myAvatar from "./images/avatar1.png";
 import pdf from "../Resume.pdf";
 
 class About extends React.Component {
@@ -93,11 +93,11 @@ class About extends React.Component {
           </button>
         </div>
 
-        <img
-          src={meImg}
+        {/* <img
+          src={myAvatar}
           alt="me"
           className={this.state.pdfToggle ? "imgToggle" : ""}
-        />
+        /> */}
       </div>
     );
   }

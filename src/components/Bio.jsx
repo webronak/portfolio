@@ -85,14 +85,14 @@ class Bio extends React.Component {
                   <span className="text">Projects</span>
                 </li>
               </Link>
-              <Link to="education">
+              <Link to="certifications">
                 <li
                   className={
-                    location.pathname.includes("education") ? "active" : ""
+                    location.pathname.includes("certifications") ? "active" : ""
                   }
                 >
                   <FontAwesomeIcon icon={faUserGraduate} />
-                  <span className="text">Education</span>
+                  <span className="text">Certifications</span>
                 </li>
               </Link>
             </ul>
@@ -148,14 +148,14 @@ class Bio extends React.Component {
                   <span className="text">Projects</span>
                 </li>
               </Link>
-              <Link to="education">
+              <Link to="certifications">
                 <li
                   className={
-                    location.pathname.includes("education") ? "active" : ""
+                    location.pathname.includes("certifications") ? "active" : ""
                   }
                 >
                   <FontAwesomeIcon icon={faUserGraduate} />
-                  <span className="text">Education</span>
+                  <span className="text">Certifications</span>
                 </li>
               </Link>
             </ul>
